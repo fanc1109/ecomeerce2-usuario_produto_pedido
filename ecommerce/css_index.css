@@ -1,0 +1,82 @@
+/* Reset básico para garantir que padding não afete a largura total */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
+  background-color: #e2e8f0;
+  color: #1e293b;
+  margin: 0;
+  padding: 40px 20px;
+}
+
+/* Container central para evitar que o formulário se estenda pela tela toda */
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Agrupamento das secções (Usuário, Produto, Pedido) em cartões */
+.card {
+  background-color: #ffffff;
+  padding: 24px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  margin-bottom: 24px;
+}
+
+h1 {
+  color: #0f172a;
+  text-align: center;
+  font-size: 1.4rem;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+/* Padronização de todos os inputs e seletores */
+input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="datetime-local"],
+select {
+  width: 100%;
+  padding: 12px 14px;
+  font-family: inherit;
+  font-size: 0.95rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  background-color: #f8fafc;
+  color: #334155;
+  text-align: left; /* Leitura natural à esquerda */
+  outline: none;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Efeito visual de foco nos campos */
+input:focus,
+select:focus {
+  border-color: #04AA6D;
+  background-color: #ffffff;
+  box-shadow: 0 0 0 3px rgba(4, 170, 109, 0.15);
+}
+
+/* Botão de envio */
+input[type="submit"] {
+  background-color: #04AA6D;
+  color: #ffffff;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  width: 100%;
+}
+
+input[type="submit"]:hover {
+  background-color: #038f5b;
+}

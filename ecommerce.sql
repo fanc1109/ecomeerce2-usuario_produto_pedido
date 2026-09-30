@@ -32,7 +32,7 @@ ENGINE = InnoDB;
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `ecommerce2`.`Pedido` (
   `id_pedido` INT NOT NULL AUTO_INCREMENT,
-  `valor_total_pedido` DECIMAL(4,2) NOT NULL,
+  `valor_total_pedido` DECIMAL(10,2) NOT NULL,
   `data_pedido` DATETIME NOT NULL,
   `forma_pagamento` VARCHAR(45) NOT NULL,
   `Usuario_id_usuario` INT NOT NULL,
@@ -53,7 +53,7 @@ CREATE TABLE IF NOT EXISTS `ecommerce2`.`Produto` (
   `id_produto` INT NOT NULL AUTO_INCREMENT,
   `foto_produto` VARCHAR(45) NULL,
   `nome_produto` VARCHAR(45) NOT NULL,
-  `preco_produto` DECIMAL(4,2) NOT NULL,
+  `preco_produto` DECIMAL(10,2) NOT NULL,
   PRIMARY KEY (`id_produto`))
 ENGINE = InnoDB;
 
